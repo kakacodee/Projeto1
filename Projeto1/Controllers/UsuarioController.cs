@@ -1,9 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Projeto1.Repositorio;
 
 namespace Projeto1.Controllers
 {
     public class UsuarioController : Controller
     {
+        //Declarando uma variável privada somente para leitura do tipo do UsuarioRepositorio chamada _usuarioRepositorio
+        private readonly UsuarioRepositorio _usuarioRepositorio;
         public IActionResult Login()
         {   
 
